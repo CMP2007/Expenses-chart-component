@@ -2,42 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="./normalice.css">
+  <link rel="stylesheet" href="./style.css">
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
   
-  <title>Frontend Mentor | Expenses chart component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Expenses chart component</title>
 </head>
 <body>
+  <article>
+    <section class="sect_1">
+      <div>
+        <h1 class="text">My balance</h1>
+        <h3 class="bigTitle">$921.48</h3>
+      </div>
+        <img src="./images/logo.svg" alt="" class="img">
+    </section>
+    <section class="sect_2">
+      <h2 class="bigTitle">Spending - Last 7 days</h2>
+      <div class="chartConteiner">
+        <div class="barDiv barDiv1">
+          <span class="day" id="day_1">mon</span>
+          <div class="bar" id="bar_1"></div>
+          <span class="span spanX1" id="span1 ">$15.32</span>
+        </div>
+        <div class="barDiv barDiv2">
+          <span class="day" id="day_2">tue</span>
+          <div class="bar" id="bar_2"></div>
+          <span class="span spanX2" id="span2 ">$57.32</span>
+        </div>
+        <div class="barDiv barDiv3">
+          <span class="day" id="day_3">wed</span>
+          <div class="bar" id="bar_3"></div>
+          <span class="span spanX3" id="span3 ">$59.32</span>
+        </div>
+        <div class="barDiv barDiv4">
+          <span class="day" id="day_4">thu</span>
+          <div class="bar" id="bar_4"></div>
+          <span class="span spanX4" id="span4 ">$85.32</span>
+        </div>
+        <div class="barDiv barDiv5">
+          <span class="day" id="day_5">fri</span>
+          <div class="bar" id="bar_5"></div>
+          <span class="span spanX5" id="span5 ">$54.32</span>
+        </div>
+        <div class="barDiv barDiv6">
+          <span class="day" id="day_6">sat</span>
+          <div class="bar" id="bar_6"></div>
+          <span class="span spanX6" id="span6 ">$53.32</span>
+        </div>
+        <div class="barDiv barDiv7">
+          <span class="day" id="day_7">sun</span>
+          <div class="bar" id="bar_7"></div>
+          <span class="span spanX7" id="span7 ">$58.32</span>
+        </div>
+      </div>
+      <hr>
+      <section class="sect_3">
+       <div>
+        <h3 class="text brown" id="sud-title">Total this month</h3>
+        <span class="Principaltext DarkBrown" id="principal">$478.33</span>
+       </div>
+       <div class="endDiv">
+        <span class="text DarkBrown" id="percentage"> +2.4%</span>
+        <span class="text brown" id="LastMonth">from last month</span>
+       </div>
+      </section>
+    </section>
+  </article>
 
-  My balance
-  $921.48
-
-  Spending - Last 7 days
-
-  mon
-  tue
-  wed
-  thu
-  fri
-  sat
-  sun
-
-  Total this month
-  $478.33
-
-  +2.4%
-  from last month
   
+
+  
+
+ 
+
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+<script src="./scripts.js"></script>
 </html>

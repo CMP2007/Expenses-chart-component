@@ -14,10 +14,9 @@ body{
     background-color: hsl(27, 66%, 92%);
 }
 article{
+    margin-top: 5rem;
     width: 92%;
     padding: 3.5rem .9rem;
-    border: solid rgb(245, 36, 9) 1px;
-   
 }
 .sect_1{
     background-color: hsl(10, 79%, 65%);
@@ -125,7 +124,7 @@ hr{
 @media screen and (min-width: 450px) {
     article{
         width: 26rem;
-        margin: auto;
+        margin: 7rem auto 0 auto ;
     }
     .sect_1{
         padding: 1rem 1.5rem 1rem 1.5rem;
@@ -145,9 +144,6 @@ hr{
         padding:  0.5rem 0.3rem;
     }
 }
-
-
-
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

@@ -1,62 +1,38 @@
-# Frontend Mentor - Expenses chart component solution
+# Expenses Chart Component: Dynamic Data Visualization
 
-This is a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/expenses-chart-component-e7yJBUdjwt).  
+This project is a **historical practice** focused on data-driven UI components. It represents my first successful implementation of external data fetching to build a dynamic bar chart, emphasizing the synchronization between a JSON data source and a responsive CSS layout.
 
-## Table of contents
+---
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
-- [Acknowledgments](#acknowledgments)
+## 🚀 Demo
+[SEE DEMO HERE](https://cmp2007.github.io/Expenses-chart-component/)
 
-
-## Overview
-
-### The challenge
-
-Users should be able to:
-
-- View the bar chart and hover over the individual bars to see the correct amounts for each day
-- See the current day’s bar highlighted in a different colour to the other bars
-- View the optimal layout for the content depending on their device’s screen size
-- See hover states for all interactive elements on the page
-- **Bonus**: Use the JSON data file provided to dynamically size the bars on the chart
+### 🏆 Challenge Context
+This project was developed as a solution to the [Expenses chart component challenge on Frontend Mentor](https://www.frontendmentor.io/solutions/expenseschartcomponent-98jjWfjSms).
 
 ### Screenshot
 
 ![](./images/screenshot_1.jpg/)
 
+---
 
-### Links
+## 📋 Evolution & Context Note
+> ⚠️ **Note on my trajectory:** This repository showcases the transition from hard-coded values to dynamic content. By utilizing `fetch()` and `Object.values()`, I learned to transform raw data into visual proportions. This project serves as a foundation for my understanding of how modern web apps communicate with APIs and databases.
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/expenseschartcomponent-98jjWfjSms)
-- Live Site URL: [Add live site URL here](https://cmp2007.github.io/Expenses-chart-component/)
+## 📋 Technical Milestones of this Stage
+In this specific phase of my training, I successfully achieved:
 
-## My process
+* **Asynchronous Data Fetching:** Implementation of the `fetch()` API to retrieve and parse a local `data.json` file, effectively decoupling the information from the presentation layer.
 
-### Built with
+* **Dynamic Chart Scaling:** Creation of a mathematical scaling logic that calculates bar heights in `rem` units, adjusted by a dynamic `divisor` based on screen size (`matchMedia`) to ensure visual consistency.
+* **Date-Driven UI Logic:** Use of the JavaScript `Date()` object to automatically identify and highlight the current day with a distinct brand color (`cyan`), improving the user's contextual awareness.
+* **Sophisticated Hover States:** Implementation of a "Tooltip" system using CSS `visibility` and the adjacent sibling selector (`+`) to display specific spending amounts only when interacting with the bars.
+* **Flexbox Data Alignment:** Utilization of `flex-direction: column-reverse` within the chart containers to ensure the bars grow from the bottom up while maintaining a clean label alignment.
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- Mobile-first workflow
+## 🛠️ Technologies (at the time)
+* **HTML5:** Semantic structure for financial dashboards.
+* **CSS3:** Flexbox for alignment, responsive scaling, and interactive hover effects.
+* **Vanilla JavaScript:** `fetch` API, Promises, and real-time DOM styling based on JSON values.
 
-
-### What I learned
-
-In this project I suffered from several setbacks since I did not do any planning before starting work, which caused me to omit the pop-up text boxes, thus producing a considerable delay in restructuring the already made code to be able to incorporate them into the design.
-
-Therefore, this practice reminds me of the importance of taking the time to analyze and plan the activity that is about to be carried out, thus avoiding delays or wasting the work already done.
-
-### Continued development
-At this moment I want to continue doing challenges and practices based on HTML, CSS and JS to develop a good foundation before continuing with my learning path.
-
-## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/CMP2007)
+---
+**Coded by [Carlos Miguel Puche](https://github.com/CMP2007)**

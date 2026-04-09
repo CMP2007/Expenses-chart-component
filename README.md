@@ -1,5 +1,8 @@
 # Expenses Chart Component: Dynamic Data Visualization
 
+> [!Note]
+>> This repository contains a legacy project from my early days as a programmer
+
 This project is a **historical practice** focused on data-driven UI components. It represents my first successful implementation of external data fetching to build a dynamic bar chart, emphasizing the synchronization between a JSON data source and a responsive CSS layout.
 
 ---
